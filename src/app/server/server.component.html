@@ -1,0 +1,7 @@
+<!-- STYLE -->
+<!-- <p [ngStyle]="{'background-color': this.getColor()}">I am SERVER with ID:{{this.customServerId}} and my status is {{this.getServerStatus() }}</p> -->
+<!-- <p [ngStyle]="{'background-color': this.customServerStatus === 'offline' ? 'red' : 'green'}">I am SERVER with ID:{{this.customServerId}} and my status is {{this.getServerStatus() }}</p> -->
+
+
+<!-- CLASS -->
+<p [ngClass]="{online: this.customServerStatus === 'online', offline:this.customServerStatus === 'offline'}">I am SERVER with ID:{{this.customServerId}} and my status is {{this.getServerStatus() }}</p>
